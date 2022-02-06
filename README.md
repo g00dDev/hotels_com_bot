@@ -71,4 +71,4 @@
 Параметры и настройки собраны в файле <a href="">/data/config.py</a><br/>
 Настройки логирования собраны в файле <a href="">/data/config.py</a>
 
-### [Сайт разработчика](https://github.com/g00dDev)
+### [Сайт разработчика](https://github.com/g00dDev/hotels_com_bot)
