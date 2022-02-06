@@ -71,6 +71,6 @@
 <a href="https://rapidapi.com/apidojo/api/hotels4/" target="_blank">API Hotels</a>,
 находятся в файле <a href="">.env</a><br/>
 Параметры и настройки собраны в файле <a href="">/data/config.py</a><br/>
-Настройки логирования собраны в файле <a href="">/data/config.py</a>
+Настройки логирования собраны в файле <a href="">/data/project_logging.py</a>
 
 ### [Сайт разработчика](https://github.com/g00dDev/hotels_com_bot)
