@@ -30,12 +30,12 @@
     /delete_history — удалить историю поиска отелей
 </div>
 <div>
-Используя команду <a href="">/start</a>, можно выбрать язык и валюту.<br/>
+Используя команду <a href="#">/start</a>, можно выбрать язык и валюту.<br/>
 Если язык и валюта не выбраны, то используются значения по умолчанию.<br/>
 </div>
 <div><br/>
-Команды <a href="">/lowprice</a>, <a href="">/highprice</a> и 
-<a href="">/bestdeal</a> позволяют получить:
+Команды <a href="#">/lowprice</a>, <a href="#">/highprice</a> и 
+<a href="#">/bestdeal</a> позволяют получить:
 </div>
 <div>
 <ul style="display: inline-block; padding: 10; margin: 0px auto;">
@@ -47,7 +47,7 @@
 </ul>
 </div>
 <div><br/>
-Команда <a href="">/history</a> позволяет вывести информационные блоки, содержащие:
+Команда <a href="#">/history</a> позволяет вывести информационные блоки, содержащие:
 </div>
 <div>
 <ul style="display: inline-block; padding: 10; margin: 0px auto;">
@@ -69,7 +69,7 @@
 Список токенов, с помощью которых бот подключается к
 <a href="https://telegram.org/" target="_blank">Telegram</a> и к
 <a href="https://rapidapi.com/apidojo/api/hotels4/" target="_blank">API Hotels</a>,
-находятся в файле <a href="">.env</a><br/>
+находятся в файле <a href="#">.env</a><br/>
 Параметры и настройки собраны в файле <a href="">/data/config.py</a><br/>
 Настройки логирования собраны в файле <a href="">/data/project_logging.py</a>
 
