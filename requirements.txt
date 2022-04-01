@@ -1,0 +1,4 @@
+requests==2.26.0
+pyTelegramBotAPI==4.2.2
+environs~=8.0.0
+telebot-calendar==1.2
