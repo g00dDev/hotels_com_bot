@@ -1,76 +1,88 @@
 <h1 align="center">hotels_com_bot</h1>
 
-## Что может бот
+## What the bot can do
 <div>
-<p>Бот работает на основе приложения 
+<p>Bot works using 
 <a href="https://telegram.org/" target="_blank">Telegram</a> и
-<a href="https://rapidapi.com/apidojo/api/hotels4/" target="_blank">API Hotels</a>. 
-Бот использует данные сайта 
+<a href="https://rapidapi.com/apidojo/api/hotels4/" 
+target="_blank">API Hotels</a>. Some parts of the bot use the 
+third party calendar
+<a href="https://libraries.io/pypi/telebot-calendar/1.2" 
+target="_blank">telebot-calendar</a>. 
+Бот uses data from the site 
 <a href="https://hotels.com" target="_blank">Hotels.com</a>, 
-ведущего поставщика гостиничного размещения в мире. Сайт
-<a href="https://hotels.com" target="_blank">Hotels.com</a> предлагает 
-путешественникам широчайший выбор вариантов проживания в более чем сотни 
-тысяч объектов размещения по всему миру, включая как независимые гостиницы, 
-так и крупнейшие сети отелей и апартаменты с самообслуживанием.</p>
-<p>Бот помогает быстро собрать данные с сайта о самых дешевых, 
-самых дорогих и самых подходящих отелях.</p>
+leading provider of hotel accommodation in the world. Сайт
+<a href="https://hotels.com" target="_blank">Hotels.com</a> gives 
+travellers one of the widest selections of accommodation on the net, 
+including both independent and major chain hotels as well as self-catering 
+in over hundreds of thousands properties worldwide.</p>
+<p>The bot helps to quickly collect data from the site about the cheapest,
+the most expensive and most suitable hotels.</p>
 </div>
 
-## Коммуникация пользователя с ботом
+## Communication between the user and the bot
 <div>
-Список команд, которые пользователь может использовать:
+List of commands that the user can use:
 
-    /help — помощь по командам бота
-    /start — выбрать язык и валюту
-    /lowprice — вывод самых дешёвых отелей в городе
-    /highprice — вывод самых дорогих отелей в городе
-    /bestdeal — вывод отелей, наиболее подходящих по цене 
-                и расположению от центра города
-    /history — вывод истории поиска отелей
-    /delete_history — удалить историю поиска отелей
+    /help — help with bot commands
+    /start — choose language and currency
+    /lowprice — search the cheapest hotels in the city
+    /highprice — search the most expensive hotels in the city
+    /bestdeal — search the most suitable hotels in accordance with 
+                specified range of prices and range of distances 
+                to the city center
+    /history — display hotels search history
+    /delete_history — delete hotels search history
 </div>
 <div>
-Используя команду <a href="#">/start</a>, можно выбрать язык и валюту.<br/>
-Если язык и валюта не выбраны, то используются значения по умолчанию.<br/>
+Using the command <a href="">/start</a>, language and currency 
+can be specified.<br/>
+If language and currency are not specified, default values are used.<br/>
 </div>
 <div><br/>
-Команды <a href="#">/lowprice</a>, <a href="#">/highprice</a> и 
-<a href="#">/bestdeal</a> позволяют получить:
+Commands <a href="">/lowprice</a>, <a href="">/highprice</a> и 
+<a href="">/bestdeal</a> allow to get:
 </div>
 <div>
 <ul style="display: inline-block; padding: 10; margin: 0px auto;">
-    <li>название отеля,</li>
-    <li>адрес,</li>
-    <li>расстояние отеля от центра,</li>
-    <li>цена в выбранной валюте,</li>
-    <li>фотографии отеля (если пользователь счёл необходимым их вывод)</li>
+    <li>hotel name,</li>
+    <li>address,</li>
+    <li>distance from the hotel to the center,</li>
+    <li>price in specified currency,</li>
+    <li>photos of the hotel (if the user has found it necessary 
+        to display them)</li>
 </ul>
 </div>
 <div><br/>
-Команда <a href="#">/history</a> позволяет вывести информационные блоки, содержащие:
+The command <a href="">/history</a> allows to display information 
+blocks containing:
 </div>
 <div>
 <ul style="display: inline-block; padding: 10; margin: 0px auto;">
-    <li>время и дату ввода команды,</li>
-    <li>команду,</li>
-    <li>список отелей с адресом и ценой</li>
+    <li>date and time of command entry,</li>
+    <li>the command,</li>
+    <li>list of hotels with address and price</li>
 </ul>
 </div>
 
-## Коммуникация администратора с ботом
-<div>
-Список команд, с помощью которых администратор может управлять ботом:
+## Communication between the administrator and the bot
+List of commands for controlling the bot by the administrator:
 
-    /stop — остановка бота
-    /delete_all_history — удалить историю поиска отелей всех пользователей
-</div>
+    /stop — stop the bot
+    /delete_all_history — delete hotel search history of all users
 
-## Настройка конфигурационного файла
-Список токенов, с помощью которых бот подключается к
-<a href="https://telegram.org/" target="_blank">Telegram</a> и к
-<a href="https://rapidapi.com/apidojo/api/hotels4/" target="_blank">API Hotels</a>,
-находятся в файле <a href="#">.env</a><br/>
-Параметры и настройки собраны в файле <a href="">/data/config.py</a><br/>
-Настройки логирования собраны в файле <a href="">/data/project_logging.py</a>
+## Configuration file setup
+List of tokens for connecting the bot to
+<a href="https://telegram.org/" target="_blank">Telegram</a> and to
+<a href="https://rapidapi.com/apidojo/api/hotels4/" target="_blank">
+API Hotels</a>,
+are located in the file <a href="">.env</a><br/>
+Parameters and settings are collected in a file 
+<a href="">/data/config.py</a><br/>
+Logging settings are collected in a file 
+<a href="">/utils/misc/project_logging.py</a>
 
-### [Сайт разработчика](https://github.com/g00dDev/hotels_com_bot)
+## Bot demo
+<img src="demo.gif"></img>
+
+### [Developer site](https://github.com/g00dDev/hotels_com_bot)
